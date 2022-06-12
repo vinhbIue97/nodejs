@@ -1,6 +1,9 @@
 @import "variable.scss";
 .app {
-  background: blue;
-  text-align: center;
-  color: $red-color;
+    background: blue;
+    text-align: left;
+    color: $red-color;
+}
+.login-container {
+    width: 1000px;
 }
