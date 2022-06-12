@@ -19,6 +19,10 @@ app.engine('.hbs', handlebars.engine({extname: '.hbs', defaultLayout: "main"}));
 app.set('view engine', '.hbs');
 app.set('views', path.join(__dirname, 'resource/views'));
 
+/**
+ * static file setup 
+ */
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get('/', function(req, res){
     res.render('home');
