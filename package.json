@@ -1,43 +1,21 @@
 {
-    "name": "shopee",
-    "version": "1.0.0",
-    "description": "shopee fake web",
-    "main": "src/index.js",
-    "scripts": {
-        "start": "nodemon --inspect src/index.js",
-        "watch": "node-sass --watch --output-style compressed src/resource/scss/ --output src/public/css/",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "lint": "eslint --ext js,jsx,ts,tsx src/",
-        "lint:fix": "eslint --fix --ext js,jsx,ts,tsx src/",
-        "prettier": "prettier --check \"src/**/(*.tsx|*.ts|*.jsx|*.js|*.scss|*.css)\"",
-        "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.jsx|*.js|*.scss|*.css)\""
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/vinhbIue97/shopee.git"
-    },
-    "author": "maithe.vinh",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/vinhbIue97/shopee/issues"
-    },
-    "homepage": "https://github.com/vinhbIue97/shopee#readme",
-    "dependencies": {
-        "autoprefixer": "^10.4.7",
-        "express": "^4.18.1",
-        "express-handlebars": "^6.0.6",
-        "postcss": "^8.4.14",
-        "postcss-cli": "^9.1.0",
-        "tailwindcss": "^3.1.2",
-        "tailwindcss-cli": "^0.1.2"
-    },
-    "devDependencies": {
-        "eslint": "^8.17.0",
-        "eslint-config-prettier": "^8.5.0",
-        "eslint-plugin-prettier": "^4.0.0",
-        "morgan": "^1.10.0",
-        "node-sass": "^7.0.1",
-        "nodemon": "^2.0.16",
-        "prettier": "^2.6.2"
-    }
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9"
+  }
 }
